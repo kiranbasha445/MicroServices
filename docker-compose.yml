@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  productservice:
+    build:
+      context: .
+      dockerfile: ProductService/Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - backend
+  postgres:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_DB: productdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: yourpassword
+    ports:
+      - "5432:5432"
+    networks:
+      - backend
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+networks:
+  backend:
+    driver: bridge
+volumes:
+  pgdata:

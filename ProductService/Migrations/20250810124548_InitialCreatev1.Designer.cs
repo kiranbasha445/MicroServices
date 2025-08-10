@@ -11,8 +11,8 @@ using ProductService.Data;
 namespace ProductService.Migrations
 {
     [DbContext(typeof(ProductDbContext))]
-    [Migration("20250810083354_seeddata")]
-    partial class seeddata
+    [Migration("20250810124548_InitialCreatev1")]
+    partial class InitialCreatev1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

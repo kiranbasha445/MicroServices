@@ -3255,11 +3255,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\DotNetCore\\ProductService\\ProductService.csproj",
+      "projectUniqueName": "D:\\Projects\\DotNetCore\\MicroServices\\ProductService\\ProductService.csproj",
       "projectName": "ProductService",
-      "projectPath": "D:\\Projects\\DotNetCore\\ProductService\\ProductService.csproj",
+      "projectPath": "D:\\Projects\\DotNetCore\\MicroServices\\ProductService\\ProductService.csproj",
       "packagesPath": "C:\\Users\\khalid\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\DotNetCore\\ProductService\\obj\\",
+      "outputPath": "D:\\Projects\\DotNetCore\\MicroServices\\ProductService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
